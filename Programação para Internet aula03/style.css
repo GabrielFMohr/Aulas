@@ -1,0 +1,70 @@
+/*Regra css
+Seletor da tag{
+    propriedade:valor;
+    ....
+}*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+tbody td,tbody tr,caption{
+    border: 4px solid red;
+    border-collapse: collapse;
+}
+thead th,thead td{
+    border: 4px solid black;
+    border-collapse: collapse;
+    background-color: red;
+    
+}
+table{
+    border-collapse: collapse;
+    transition: 5s;
+}
+table:hover{
+    rotate: 180deg;
+}
+tfoot td{
+    border: 4px solid gray;
+    background-color: goldenrod;
+}
+div>img{
+    width: 100%;
+    height: 100px;
+    display: block;
+    border-radius: 20px 15px 10px 5px;
+}
+ul,ol{
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    border: 10px solid black;
+    border-collapse: collapse;
+}
+#OMAIORAL{
+    width: 50%;
+    height: 50px;
+    transition: 3s;
+}
+#OMAIORAL:hover{
+    zoom: 50;
+}
+/*Tem várias coisas tipo rotacionar e opacidade que dá pra fazer aqui, não coloquei por preguiça
+*/
+#Box1{
+    border: 3px solid coral;
+    background-color: violet;
+    background-image: url("./sherek.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-position-x: center;
+    background-position-y: bottom;
+    text-align: center;
+    border-radius: 50%;
+}
+/*Existe um monte de coisa que dá pra fazer nisso aqui*/
+body{
+    background-color: bisque;
+}

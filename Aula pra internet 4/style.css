@@ -1,0 +1,14 @@
+.box{
+    display: inline-block;
+    background-color: rgb(57, 4, 100);
+    width: 200px;
+    height: 200px;
+    border: 7px solid black;
+    padding: 10px;
+}
+#box1{
+    background-color: rgb(216, 203, 216);
+}
+#box2{
+    background-color: blue;
+}

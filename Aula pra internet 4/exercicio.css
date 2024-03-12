@@ -1,0 +1,40 @@
+.bolas{
+    display: inline-block;
+    border: 7px solid greenyellow;
+    background-color: greenyellow;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+#caixa{
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 7px solid black;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+}
+#bola1{
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
+#bola2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+#bola3{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+#bola4{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}

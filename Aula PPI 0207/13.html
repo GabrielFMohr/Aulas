@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+
+    <script>
+        let container =document.querySelector('.container')
+        let eventoCapturado
+        document.body.addEventListener('keypress',nome)
+
+        function nome(evento)
+        {
+            let p=document.createElement("p")
+            p.innerHTML=evento.code+" - ";
+
+            container.append(p)
+        }
+
+    </script>
+</body>
+</html>

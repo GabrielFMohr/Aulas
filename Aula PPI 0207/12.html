@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            flex-grow: 1;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <p></p>
+        </div>
+        <div class="box" id="box2">
+            <p></p>
+        </div>
+        <div class="box" id="box3">
+            <p></p>
+        </div>
+        <div class="box" id="box4">
+            <p></p>
+        </div>
+        <div class="box" id="box5">
+            <p></p>
+        </div>
+    </div>
+    <script>
+        document.querySelector("body").style.backgroundColor="#AADB00"
+
+        document.body.addEventListener('keypress',Sorteio)
+
+        function randomNumber(){
+            return Math.floor((Math.random())*255).toString(16).toUpperCase() //gera entre 0 e 1
+        }
+       function randomCol(){
+            return "#"+randomNumber()+randomNumber()+randomNumber()
+
+       }
+       function setTxtColor(elemento,colorText)
+       {
+        elemento.querySelector("p").innerHTML=colorText
+       }
+       function Sorteio(evento){
+            console.log(evento)
+            if(evento.code=='Space')
+            {
+            for(let i=1;i<=5;i++)
+            {
+                let box= document.querySelector("#box"+i)    
+                let color=randomCol();
+                setTxtColor(box,color)
+                box.style.backgroundColor=color
+            }
+        }
+        }
+    </script>
+</body>
+
+</html>
